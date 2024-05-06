@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ジュース本数管理プラットフォーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ジュース本数管理</h1>
+    <div id="controls">
+        <label>貸し手:</label>
+        <select id="lender">
+            <option value="あやせ">あやせ</option>
+            <option value="そうま">そうま</option>
+            <option value="しんのすけ">しんのすけ</option>
+        </select>
+        <label>借り手:</label>
+        <select id="borrower">
+            <option value="あやせ">あやせ</option>
+            <option value="そうま">そうま</option>
+            <option value="しんのすけ">しんのすけ</option>
+        </select>
+        <button onclick="registerLoan()">貸し登録</button>
+        <button onclick="registerBorrow()">借り登録</button>
+        <button onclick="completeRepayment()">返済完了</button>
+    </div>
+    <div id="graphContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
